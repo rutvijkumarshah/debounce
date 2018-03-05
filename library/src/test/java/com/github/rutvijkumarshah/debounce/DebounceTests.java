@@ -1,4 +1,4 @@
-package com.rutvij.debounce;
+package com.github.rutvijkumarshah.debounce;
 
 import org.junit.After;
 import org.junit.Before;

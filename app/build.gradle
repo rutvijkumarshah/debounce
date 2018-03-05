@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.rutvij.debounce_sample"
+        applicationId "com.github.rutvijkumarshah.debounceApp"
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1

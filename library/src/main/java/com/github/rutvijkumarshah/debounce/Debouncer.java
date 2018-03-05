@@ -1,4 +1,4 @@
-package com.rutvij.debounce;
+package com.github.rutvijkumarshah.debounce;
 
 import android.os.Handler;
 import android.os.Looper;

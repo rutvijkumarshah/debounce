@@ -1,4 +1,4 @@
-package com.rutvij.debounce;
+package com.rutvijkumarshah.debounce;
 
 import org.junit.Test;
 

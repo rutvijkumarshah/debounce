@@ -1,11 +1,11 @@
-package com.rutvij.app;
+package com.github.rutvijkumarshah.app;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.rutvij.debounce.Debouncer;
+import com.github.rutvijkumarshah.debounce.Debouncer;
 
 public class MainActivity extends AppCompatActivity {
 

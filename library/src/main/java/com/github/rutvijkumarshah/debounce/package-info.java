@@ -2,4 +2,4 @@
  * Debouncer provides de-bounce functionality.
  *
  */
-package com.rutvij.debounce;
+package com.github.rutvijkumarshah.debounce;

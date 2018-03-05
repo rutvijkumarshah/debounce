@@ -1,4 +1,4 @@
-package com.rutvij.app;
+package com.rutvijkumarshah.app;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.rutvij.debounce_sample", appContext.getPackageName());
+        assertEquals("com.github.rutvijkumarshah.debounceApp", appContext.getPackageName());
     }
 }

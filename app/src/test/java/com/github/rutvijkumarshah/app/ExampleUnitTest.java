@@ -1,4 +1,4 @@
-package com.rutvij.app;
+package com.github.rutvijkumarshah.app;
 
 import org.junit.Test;
 
