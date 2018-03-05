@@ -180,7 +180,8 @@ public final class Debouncer {
     /**
      * Worker object that keeps handler and executable information.
      */
-    private class Worker implements Runnable {
+    @VisibleForTesting
+    protected class Worker implements Runnable {
 
         /**
          * actual runnable to be executed.
@@ -243,5 +244,10 @@ public final class Debouncer {
     @VisibleForTesting
     Map<String, Worker> getRunnables() {
         return runnables;
+    }
+
+    @VisibleForTesting
+    static void reset() {
+        instance = null;
     }
 }
