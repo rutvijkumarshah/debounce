@@ -22,6 +22,40 @@ dependencies {
 }
 ```
 
+Why
+---
+Many times we need a behavior that should only happen after a repeated action has completed.
+
+For example, when making network call based on user type in searchbox , it may reduce number of network call.
+But if delayed a bit little, before making network call in case user may type few other keywords.
+
+This is a tiny library with andorid specific implementation to achive "debouce" effect.
+
+If you are alreay using Rx-Java it has debouce operator for similar effect in this case this library is not useful.
+
+How
+---
+
+```java
+debouncer = Debouncer.getInstance();
+ ...
+ public void onClick(View view) {
+    debouncer.debounce("logClicked",() -> Log.d(TAG,"OnClick"));
+ }
+
+```
+Debouncer uses default delay time to achieve debounce behavior.
+You can set default delay time by calling `Debouncer.setDefaultDelayTime(defaultDelayTime)`  before calling `getInstance()`
+
+Deboucer by default uses Main thread to call-back passed runnable, but debouce method can take
+optional `Handler` to specify as target thread to execute runnable.
+
+```java
+debouncer.debounce("logClicked",() -> Log.d(TAG,"OnClick"),handler);
+```
+
+Deboucer can clear delayed taks by calling `debouncer.clear("logClicked");` or clearing all taks by calling `debouncer.clearAll()`
+
 
 
 License

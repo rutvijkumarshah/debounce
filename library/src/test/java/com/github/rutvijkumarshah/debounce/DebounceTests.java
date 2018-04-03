@@ -16,6 +16,7 @@ import static org.junit.Assert.assertThat;
 /**
  * Test case for Debounce.
  */
+@SuppressWarnings("SpellCheckingInspection")
 @RunWith(RobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 public class DebounceTests {
