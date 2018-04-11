@@ -18,7 +18,7 @@ allprojects {
  Add the debouce dependency:
 ```groovy
 dependencies {
-    implementation 'com.github.rutvijkumarshah:debounce:1.0-beta'
+    implementation 'com.github.rutvijkumarshah:debounce:1.0'
 }
 ```
 
